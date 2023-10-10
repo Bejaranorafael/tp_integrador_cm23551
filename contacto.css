@@ -1,0 +1,152 @@
+.menu-derecha {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: rgba(51, 51, 51, 0.7); /* Fondo transparente con opacidad */
+  padding: 10px; /* Reducimos el espacio alrededor del menú */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  backdrop-filter: blur(10px); /* Agregamos un efecto de desenfoque al fondo */
+  border-radius: 0 0 0 10px; /* Añadimos bordes redondeados en la esquina inferior izquierda */
+}
+
+
+.menu-derecha ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+}
+.menu-derecha ul li {
+  margin-right: 20px; /* Espacio entre elementos del menú */
+}
+
+.menu-derecha a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s; /* Agregamos una transición de color */
+}
+
+.menu-derecha a:hover {
+  color: #ff9900; /* Cambiamos el color en hover */
+}
+
+
+
+
+
+
+
+/* Estilos para el fondo de la página de contacto */
+.contenido-contacto {
+  background-image: url('/images/contac.jpg'); /* Reemplaza 'ruta_de_tu_imagen.jpg' con la ruta de tu imagen de fondo */
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 20px;
+}
+
+/* Estilos para los enlaces de redes sociales */
+
+.redes-sociales-icon {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 35px; /* Tamaño más grande para los íconos */
+  transition: color 0.3s ease-in-out;
+  color: #333; /* Color predeterminado de los íconos */
+  text-decoration: none; /* Elimina el subrayado predeterminado */
+}
+
+/* Estilos para el ícono de Facebook */
+.redes-sociales-icon.facebook:hover {
+  color: #1877f2; /* Color de hover específico para Facebook */
+}
+
+/* Estilos para el ícono de Twitter */
+.redes-sociales-icon.twitter:hover {
+  color: #1da1f2; /* Color de hover específico para Twitter */
+}
+
+/* Estilos para el ícono de Instagram */
+.redes-sociales-icon.instagram:hover {
+  color: #e1306c; /* Color de hover específico para Instagram */
+}
+.redes-sociales a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #333;
+  font-size: 50px;
+  transition: color 0.3s ease-in-out;
+}
+
+
+
+
+.redes-sociales a:hover {
+  color: #007BFF;
+}
+
+/* Estilos para el formulario de contacto */
+.formulario-contacto {
+  background-color: rgba(0, 0, 0, 0.8); /* Fondo semitransparente */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.formulario-contacto h2 {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.formulario-contacto label {
+  display: block;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.formulario-contacto input[type="text"],
+.formulario-contacto input[type="email"],
+.formulario-contacto textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  color: #333;
+}
+
+.formulario-contacto input[type="submit"] {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.formulario-contacto input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para el acceso de envío de correo electrónico */
+.envio-correo {
+  color: #fff;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.envio-correo a {
+  color: #007BFF;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.envio-correo a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,50 @@
+/* Estilos generales para toda la página */
+/* Estilos generales para toda la página */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('imagen-de-fondo.jpg'); /* Cambia 'imagen-de-fondo.jpg' por la ruta de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Estilos para el menú en la parte derecha */
+  .menu-derecha {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #333;
+    padding: 20px;
+  }
+  
+  .menu-derecha ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .menu-derecha ul li {
+    margin-bottom: 10px;
+  }
+  
+  .menu-derecha a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  /* Estilos para el mensaje de bienvenida */
+  .mensaje-bienvenida {
+    text-align: center;
+    margin-top: 20%;
+    color: white;
+  }
+  
+  .mensaje-bienvenida h1 {
+    font-size: 36px;
+  }
+  
+  .mensaje-bienvenida p {
+    font-size: 18px;
+  }
+  
+  

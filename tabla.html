@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="tablas.css"> <!-- Enlazar el archivo CSS -->
+  <title>Tabla de Edad, Talla y Peso Ideal</title>
+</head>
+<body>
+
+     <!-- Menú desplegable -->
+     <nav class="menu-derecha">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="recetas.html">Recetas</a></li>
+          <li><a href="contactos.html">Contacto</a></li>
+          <li><a href="tabla.html">Tabla Nutricional</a></li>
+        </ul>
+      </nav>
+  <div class="container">
+    <!-- Título centrado en negrita -->
+    <h1 class="title">Tabla de Edad, Talla y Peso Ideal</h1>
+
+    <!-- Tabla de datos -->
+    <table border="1" class="table">
+      <caption>Tabla de Edad, Talla y Peso Ideal</caption>
+      <thead>
+        <tr>
+          <th>Edad</th>
+          <th>Talla</th>
+          <th>Peso Ideal</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Fila 1 -->
+        <tr>
+          <td>0-5 años</td>
+          <td>Variable</td>
+          <td>Variable</td>
+        </tr>
+        <!-- Fila 2 -->
+        <tr>
+          <td>6-12 años</td>
+          <td>Variable</td>
+          <td>Variable</td>
+        </tr>
+        <!-- Fila 3 -->
+        <tr>
+          <td>13-18 años</td>
+          <td>Variable</td>
+          <td>Variable</td>
+        </tr>
+        <tr>
+            <td>20-25 años</td>
+            <td>Variable</td>
+            <td>Variable</td>
+          </tr>
+          <tr>
+            <td>28-33 años</td>
+            <td>Variable</td>
+            <td>Variable</td>
+          </tr>
+          <tr>
+            <td>35-40 años</td>
+            <td>Variable</td>
+            <td>Variable</td>
+          </tr>
+          <tr>
+            <td>42-47 años</td>
+            <td>Variable</td>
+            <td>Variable</td>
+          </tr>
+        <!-- Puedes agregar más filas según sea necesario -->
+      </tbody>
+    </table>
+
+    <!-- Formulario para cargar peso y talla -->
+    <div class="form-container">
+      <h2>Calcular Peso Ideal</h2>
+      <form>
+        <label for="talla">Talla (cm):</label>
+        <input type="number" id="talla" name="talla" required>
+
+        <label for="peso">Peso (kg):</label>
+        <input type="number" id="peso" name="peso" required>
+
+        <button type="submit">Calcular</button>
+      </form>
+      <p>Peso Ideal: <span id="resultado">--</span> kg</p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,127 @@
+.menu-derecha {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(51, 51, 51, 0.7); /* Fondo transparente con opacidad */
+    padding: 10px; /* Reducimos el espacio alrededor del menú */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    backdrop-filter: blur(10px); /* Agregamos un efecto de desenfoque al fondo */
+    border-radius: 0 0 0 10px; /* Añadimos bordes redondeados en la esquina inferior izquierda */
+  }
+  
+  
+  .menu-derecha ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+  }
+  .menu-derecha ul li {
+    margin-right: 20px; /* Espacio entre elementos del menú */
+  }
+  
+  .menu-derecha a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s; /* Agregamos una transición de color */
+  }
+  
+  .menu-derecha a:hover {
+    color: #ff9900; /* Cambiamos el color en hover */
+  }
+
+
+/* Estilos para el fondo con imagen */
+body {
+    background-image: url('/images/tabla.jpg'); /* Cambia 'ruta_de_la_imagen.jpg' por la ruta de tu imagen de fondo */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #f0f0f0; /* Color de fondo de respaldo */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Estilos para el contenedor principal */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  /* Estilos para el título */
+  .title {
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 20px;
+    color: #333; /* Color del texto */
+  }
+  
+  /* Estilos para la tabla */
+  .table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+  }
+  
+  .table th, .table td {
+    padding: 8px;
+    text-align: center;
+  }
+  
+  /* Estilos para el formulario */
+  .form-container {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
+    border-radius: 10px;
+  }
+  
+  .form-container h2 {
+    font-size: 18px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  label {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Estilos para el resultado del cálculo */
+  p {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  

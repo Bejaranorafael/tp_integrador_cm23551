@@ -1,0 +1,87 @@
+/* Estilos generales para toda la página */
+/* Estilos generales para toda la página */
+body {
+    margin: 0;
+    padding: 0;
+    /*background-image: url('/images/1.jpg'); /* Cambia 'imagen-de-fondo.jpg' por la ruta de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    background-repeat: no-repeat;
+  }
+  
+  /* Estilos para el menú en la parte derecha */
+  .menu-derecha {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(51, 51, 51, 0.7); /* Fondo transparente con opacidad */
+    padding: 10px; /* Reducimos el espacio alrededor del menú */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    backdrop-filter: blur(10px); /* Agregamos un efecto de desenfoque al fondo */
+    border-radius: 0 0 0 10px; /* Añadimos bordes redondeados en la esquina inferior izquierda */
+  }
+  
+  
+  .menu-derecha ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+  }
+  .menu-derecha ul li {
+    margin-right: 20px; /* Espacio entre elementos del menú */
+  }
+  
+  .menu-derecha a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s; /* Agregamos una transición de color */
+  }
+  
+  .menu-derecha a:hover {
+    color: #ff9900; /* Cambiamos el color en hover */
+  }
+  /* Estilos para el contenedor de las recetas en 4 filas */
+.receta-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en filas */
+    justify-content: space-between; /* Distribuye las tarjetas horizontalmente */
+  }
+  
+  /* Estilos para cada tarjeta de receta */
+  .receta-card {
+    width: calc(25% - 20px); /* Ancho del 25% del contenedor con margen */
+    margin: 10px; /* Espacio entre las tarjetas */
+    box-sizing: border-box; /* Evita que los márgenes afecten el ancho total */
+  }
+  
+  /* Ajusta los estilos de las tarjetas según tus preferencias */
+  .receta-card h2 {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+  
+  /* Estilos para los iframes de video */
+  .receta-card iframe {
+    width: 100%; /* Ocupa todo el ancho de la tarjeta */
+    height: 0; /* Establece la altura en 0 (se ajustará automáticamente) */
+    padding-bottom: 56.25%; /* Proporción de aspecto 16:9 para el video */
+  }
+  /* Estilos para hacer responsive */
+@media screen and (max-width: 768px) {
+    .receta-card {
+      width: calc(50% - 20px); /* Ancho del 50% del contenedor con margen */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .receta-card {
+      width: 100%; /* Ancho del 100% del contenedor sin margen */
+      margin: 10px 0; /* Espacio entre las tarjetas en dispositivos pequeños */
+    }
+  }
+  
+  
+  
